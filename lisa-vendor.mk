@@ -1380,6 +1380,7 @@ PRODUCT_PACKAGES += \
     DaxUI \
     daxService \
     android.hardware.neuralnetworks@1.3-service-qti \
+    c2_manifest_vendor \
     manifest_android.hardware.drm@1.3-service.widevine \
     manifest_vendor.xiaomi.hardware.mlipay \
     vendor.qti.diag.hal.service \
