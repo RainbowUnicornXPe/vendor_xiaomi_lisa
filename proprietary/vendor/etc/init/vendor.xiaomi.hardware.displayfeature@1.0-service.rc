@@ -8,6 +8,13 @@ service vendor.displayfeature-hal-1-0 /vendor/bin/hw/vendor.xiaomi.hardware.disp
     group system graphics
     onrestart restart displayfeature
 
+on early-boot
+    # Display feature sysfs node
+    chown system system /sys/class/mi_display/disp-DSI-0/disp_count
+    chmod 0664 /sys/class/mi_display/disp-DSI-0/disp_count
+    chown system system /sys/class/mi_display/disp-DSI-1/disp_count
+    chmod 0664 /sys/class/mi_display/disp-DSI-1/disp_count
+
 on boot
     chown system system /sys/devices/virtual/graphics/fb0/hist_event
 

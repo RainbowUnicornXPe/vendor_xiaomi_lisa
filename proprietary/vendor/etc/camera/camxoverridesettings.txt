@@ -2,8 +2,8 @@ multiCameraLogicalXMLFile=lisa.xml
 multiCameraHWSyncMask=0x0
 logInfoMask=0x0
 overrideLogLevels=0x1
+logConfigMask=0x0
 logWarningMask=0
-logConfigMask=0
 systemLogEnable=TRUE
 logCoreCfgMask=0
 enableAsciiLogging=FALSE
@@ -14,6 +14,7 @@ enable3ADebugData=FALSE
 enableTuningMetadata=FALSE
 
 raiserecoverysigabrt=FALSE
+enableBLMClient=1
 pdafHWEnable=TRUE
 disablePDAF=FALSE
 isPhyicalMultiCameraSupported=TRUE
@@ -70,9 +71,7 @@ enablePerRequestSync=FALSE
 
 #Set MaxZoom to 10 to disable ExtendedMaxZoom feature
 extendedMaxZoomRatio=10.0
-
-#increase the padding time from 50ms to 100ms reported by pipeline while do fulsh process
-sessionResponseTimePadding=100
+sessionDumpForFlush=FALSE
 #enable earlyPCR
 numPCRsBeforeStreamOn=1
 
@@ -82,3 +81,4 @@ enableEGLCache=TRUE
 #Enable shot2Shutter for zsl capture
 soundTimeWhenAnchor=1
 
+isRealSquareSupported=FALSE
