@@ -8,7 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/etc/displayconfig/display_id_4630946480857061762.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061762.xml \
     vendor/xiaomi/lisa/proprietary/vendor/etc/displayconfig/display_id_4630946622257352578.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946622257352578.xml \
-    vendor/xiaomi/lisa/proprietary/system/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/lisa/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/xiaomi/lisa/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/lisa/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
@@ -33,7 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
     vendor/xiaomi/lisa/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/xiaomi/lisa/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
-    vendor/xiaomi/lisa/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
     vendor/xiaomi/lisa/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/xiaomi/lisa/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/xiaomi/lisa/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
@@ -256,7 +254,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/lisa/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/lisa/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
-    vendor/xiaomi/lisa/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/lisa/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/xiaomi/lisa/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/lisa/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
@@ -538,8 +535,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libcodec2_hidl@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.0_vendor.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libcodec2_vndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_vndk_vendor.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdeccfg.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libdmabufheap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdmabufheap.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libdolbyottcameracontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdolbyottcameracontrol.so \
@@ -569,7 +564,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libresampler.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
@@ -580,11 +574,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_flacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_flacdec.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_aacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_aacdec.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_aacenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_aacenc.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ac4dec.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_amrdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_amrdec.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_amrnbenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_amrnbenc.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_amrwbenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_amrwbenc.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ddpdec.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_flacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_flacdec.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_flacenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_flacenc.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_g711dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_g711dec.so \
@@ -593,7 +585,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_opusdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_opusdec.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_rawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_rawdec.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefright_soft_vorbisdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_vorbisdec.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrightdolby.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/libvideoNS.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoNS.so \
@@ -667,15 +658,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib/rfsa/adsp/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_headphone.bin \
     vendor/xiaomi/lisa/proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_spk.bin \
     vendor/xiaomi/lisa/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/soundfx/libhwdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhwdap.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmisoundfx.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswdap.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswgamedap.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
@@ -960,6 +947,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libcamxswispiqmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswispiqmodule.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
+    vendor/xiaomi/lisa/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
+    vendor/xiaomi/lisa/proprietary/vendor/lib64/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svarnn.so \
+    vendor/xiaomi/lisa/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
@@ -981,9 +971,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libcvp2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp2_1.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeccfg.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdeflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeflicker.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
@@ -992,7 +980,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdisplayfeatureservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayfeatureservice.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdmabufheap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdmabufheap.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdolbyottcameracontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyottcameracontrol.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdolbyvision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyvision.so \
@@ -1004,15 +991,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libfocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfocus.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libgpu_tonemapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpu_tonemapper.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
+    vendor/xiaomi/lisa/proprietary/vendor/lib64/libhdrdynamic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamic.so \
+    vendor/xiaomi/lisa/proprietary/vendor/lib64/libhdrdynamicootf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamicootf.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libhexagon_controller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_controller.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libhydra_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhydra_common.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
@@ -1067,9 +1054,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libmibokeh_mask_dsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_mask_dsp.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
+    vendor/xiaomi/lisa/proprietary/vendor/lib64/libmiphone_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiphone_preview_bokeh.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libmlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay@1.1.so \
+    vendor/xiaomi/lisa/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libmmcamera_bestats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_bestats.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
@@ -1178,9 +1167,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libssccalapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssccalapi.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_soft_ac4dec.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_soft_ddpdec.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/libstagefrightdolby.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrightdolby.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
@@ -1226,10 +1212,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/sensors.mius.proximity.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.mius.proximity.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/sensors.touch.detect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.detect.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/soundfx/libhwdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhwdap.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmisoundfx.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswgamedap.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/unnhal-acc-gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-gpu.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/unnhal-acc-htp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-htp.so \
@@ -1240,8 +1223,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0-impl.so \
-    vendor/xiaomi/lisa/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/xiaomi/lisa/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
@@ -1352,8 +1333,6 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
-    DaxUI \
-    daxService \
     audiosphere \
     com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks@1.3-service-qti \
